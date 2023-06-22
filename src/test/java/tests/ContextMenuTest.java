@@ -1,8 +1,11 @@
+package tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+import tests.BaseTest;
+
 import static org.testng.Assert.assertEquals;
 
 public class ContextMenuTest extends BaseTest {

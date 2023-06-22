@@ -1,14 +1,14 @@
+package tests;
+
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+import tests.BaseTest;
+
 import java.io.File;
 import static org.testng.AssertJUnit.assertEquals;
 
 
-public class FileUploadTest extends BaseTest{
+public class FileUploadTest extends BaseTest {
 
     @Test
     public void verificationOfTheMachingNamesInTheFilesUploadedTest() {
