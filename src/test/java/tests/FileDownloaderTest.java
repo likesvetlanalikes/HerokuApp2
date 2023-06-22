@@ -21,7 +21,9 @@ public class FileDownloaderTest extends BaseTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        File file = new File("E:\\MY\\QA\\JAVA\\HerokuApp2\\src\\test\\resources\\Screenshot (3).png");
+        File file = new File("src/test/resources/Screenshot (3).png");
+        driver.findElement(By.id("file-upload")).sendKeys(file.getAbsolutePath());
+        driver.findElement(By.id("file-submit")).click();
         Assert.assertTrue(file.exists(), "File not downloaded");
 
     }
