@@ -13,9 +13,7 @@ public class ContextMenuTest extends BaseTest {
         driver.get("https://the-internet.herokuapp.com/context_menu");
         Actions actions = new Actions(driver);
         actions.contextClick(driver.findElement(By.id("hot-spot"))).build().perform();
-
     }
-
     @Test
     public void alertTextValidationTesT() {
 
