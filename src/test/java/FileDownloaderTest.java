@@ -20,8 +20,6 @@ public class FileDownloaderTest extends BaseTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-        // Проверяем наличие файла на файловой системе
         File file = new File("E:\\MY\\QA\\JAVA\\HerokuApp2\\src\\test\\resources\\Screenshot (3).png");
         Assert.assertTrue(file.exists(), "File not downloaded");
 
