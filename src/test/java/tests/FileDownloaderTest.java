@@ -22,10 +22,12 @@ public class FileDownloaderTest extends BaseTest {
             e.printStackTrace();
         }
         File file = new File("src/test/resources/Screenshot (3).png");
-        driver.findElement(By.id("file-upload")).sendKeys(file.getAbsolutePath());
-        driver.findElement(By.id("file-submit")).click();
+        driver.findElement(By.linkText( “Screenshot (3).png” ).sendKeys(file.getAbsolutePath()).click();
         Assert.assertTrue(file.exists(), "File not downloaded");
 
+    }
+
+    private Object Screenshot(int i) {
     }
 }
 
