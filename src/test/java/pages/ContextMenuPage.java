@@ -1,4 +1,9 @@
 package pages;
 
-public class ContextMenuPage {
+import org.openqa.selenium.WebDriver;
+
+public class ContextMenuPage extends BasePage{
+    public ContextMenuPage(WebDriver driver) {
+        super(driver);
+    }
 }
